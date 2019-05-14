@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Time ClaytonW</title>
+    <link rel="stylesheet" href="css/domtime.css">
+    <script src="js/domtime.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+</head>
+<body onload='renderTime();'>
+    <h1>DOM Time! / Created by Clayton W / April 2019</h1>
+    <div id='clockDisplay' class='container'></div>    
+</body>
+<script>
+    let getBody = document.body;
+
+    let newElement = document.createElement("h1");
+
+    let date = new Date();
+    let currentHour = date.getHours();
+    let currentMinutes = date.getMinutes();
+
+    let createTxtMsg;
+
+    if (currentHour = 7) {
+        if (currentMinutes >= 45) {
+            createTxtMsg = "I am in Period 1!";
+        } else if (currentMinutes < 45) {
+            createTxtMsg = "I am not in school!";
+        }
+    } else if (currentHour = 8) {
+        createTxtMsg = "I am in Period 1!";
+    } else if (currentHour = 9) {
+        if (currentMinutes < 15) {
+            createTxtMsg = "I am in Period 1!";
+        } else if (currentMinutes >= 15) {
+            createTxtMsg = "I am in Period 2!";
+        }
+    } else if (currentHour = 10) {
+        if (currentMinutes < 52) {
+            createTxtMsg = "I am in Period 2!";
+        } else if (currentMinutes >= 52) {
+            createTxtMsg = "I am at lunch!";
+        }
+    } else if (currentHour = 11) {
+        if (currentMinutes < 37) {
+            createTxtMsg = "I am at lunch!";
+        } else if (currentMinutes >= 37) {
+            createTxtMsg = "I am in Period 3!";
+        }
+    } else if (currentHour = 12) {
+        createTxtMsg = "I am in Period 3!";
+    } else if (currentHour = 1) {
+        if (currentMinutes < 7) {
+            createTxtMsg = "I am in Period 3!";
+        } else if (currentMinutes >= 7) {
+            createTxtMsg = "I am in Period 4!";
+        }
+    } else if (currentHour = 2) {
+        if (currentMinutes < 42) {
+            createTxtMsg = "I am in Period 4!";
+        } else if (currentMinutes >= 42) {
+            createTxtMsg = "I am not in school!";
+        }
+    } else {
+        createTxtMsg = "I am not in school!";
+    }
+    
+    let createEleTxt = document.createTextNode(createTxtMsg);
+
+    newElement.appendChild(createEleTxt);
+
+    getBody.appendChild(newElement);
+
+    newElement.setAttribute("class", "welcome");
+    newElement.style.cssText("text-align", "center");
+</script>
+</html>

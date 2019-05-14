@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>React with Sandbox</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/p1.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/w3.css" />
+</head>
+<body style="font-family: 'Oswald', sans-serif;">
+
+  <div class="grid-container">
+    <div class="item1">
+      <p style="font-size: 40px">React</p>
+      <p style="font-size: 20px"><a href="../../index.html">Link back to my home page</a></p>
+    </div>
+    <div class="item2" style="background-color: #ffffff">
+      <a href="https://www.westada.org/Domain/56"><img src="../../images/logo/meridianlogo.jpg" height="120" width="120" alt="Meridian High Logo"/></a>
+      <br />
+      <a href="https://www.westada.org/Domain/51"><img src="../../images/logo/centenniallogo.png" height="120" width="120" alt="Centennial High Logo" /></a>
+      <br />
+      <a href="https://www.westada.org/"><img src="../../images/logo/westadalogo.png" height="120" width="300" alt="West Ada Logo" /></a>
+    </div>
+
+    <div class="item3">
+
+      <p style="font-size: 30px">React</p>
+      <p style="font-size: 20px">React is a JavaScript library used for making user interfaces easily. The system is based on the usage of various components you can make, which avoids the problems of templates, allowing you to pass data through your app.</p>
+      <img src="images/Joker3.png" alt="Joker React 1"  height="800px" width="1600px"/>
+      <p style="font-size: 15px">Joker React Example 1</p>
+      <img src="images/Joker4.png" alt="Joker React 2"  />
+      <p style="font-size: 15px">Joker React Example 2</p>
+
+      <br />
+
+      <p style="font-size: 20px">This is the base JS used to grab or search for dad jokes from the API, icanhazdadjoke.com</p>
+      
+      <br />
+
+      <img src="images/JokerForm.png" alt="Joker Render" />
+      <p style="font-size: 15px">Joker Rendering</p>
+
+      <p style="font-size: 20px">This is what allows the user to search for specific jokes, and renders the jokes.</p>
+
+    </div>
+
+    <!--<div class="item4" id="dadjokes">
+      <button onClick={this.onTellJoke}>Tell me a joke</button>
+      <p>{this.state.joke}</p>
+    </div> -->
+  </div>
+
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="js/dad_joke.js"></script>
+</body>
+</html>

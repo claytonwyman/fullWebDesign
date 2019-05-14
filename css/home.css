@@ -1,0 +1,50 @@
+body {
+  background-color: #bcd6ff;
+  background-image: url(../images/background/beachbackground.jpg);
+}
+
+.header { grid-area: header; }
+.logos { grid-area: logos; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  /*grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu footer footer footer footer footer'; */
+  grid-template-columns: 2fr 1fr 4fr 1fr;
+  grid-template-rows: 193px 500px 100px;
+
+  grid-template-areas:
+    "header header header header"
+    "logos ... main main"
+    "footer footer footer footer";
+
+  grid-gap: 10px;
+  /*background-color: rgba(146, 146, 147, 0.7);*/
+  background-image: url(../images/background/paperbackgroundstretched1.jpg);
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+}
+
+@media screen and (max-width: 40em) {
+  .gridcontainer {
+    grid-template-area:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer"
+    "logos logos logos logos"
+  }
+}
+
+.grid-container > div {
+  background-color: rgba(146, 146, 147, 0.2);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-style: inset;
+  border-color: grey;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/home.css" />
+  <link rel="stylesheet" type="text/css" href="css/w3.css" />
+</head>
+<body style="font-family: 'Oswald', sans-serif;">
+
+  <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+    <a href="http://192.168.1.153/b2/zacharys/" class="w3-bar-item w3-button">Zachary S</a>
+    <a href="http://192.168.1.153/b2/bryanh/" class="w3-bar-item w3-button">Bryan H</a>
+    <a href="http://192.168.1.153/b2/ethana/" class="w3-bar-item w3-button">Ethan A</a>
+  </div>
+
+  <div class="w3-grey">
+    <button class="w3-button w3-grey w3-xlarge" onclick="w3_open()">☰</button>
+    <div class="w3-container">
+      <p>Links to classmates I work with or am inspired by in the sidebar</p>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div class="header">
+      <p style="font-size: 30px">Clayton Wyman's Portfolio</p>
+    </div>
+    <div class="logos">
+      <a href="https://www.westada.org/Domain/56"><img src="images/logo/meridian2.png" height="120" width="120" alt="Meridian High Logo"/></a>
+
+      <a href="https://www.westada.org/Domain/51"><img src="images/logo/centenniallogo.png" height="120" width="120" alt="Centennial High Logo"/></a>
+
+      <br />
+
+      <a href="https://www.westada.org/"><img src="images/logo/westada2.png" height="120" width="160" alt="West Ada Logo" /></a>
+
+      <a href="https://www.boisestate.edu/"><img src="images/logo/bsu.png" height="120" width="140" alt="BSU Logo" /></a>
+    </div>
+
+    <div class="main" style="font-size: 20px">
+
+      <p style="font-size: 20px">Links to my Projects</p>
+      <p style="font-size: 15px"><a href="projects/vm_docs/index.html">Create a Virtual Machine, install SW, backup offsite</a></p>
+      <p style="font-size: 15px"><a href="projects/b1_p3/index.html">BASH Scripting</a></p>
+      <p style="font-size: 15px"><a href="projects/b2_p3/index.html">MySQL Install</a></p>
+      <p style="font-size: 15px"><a href="projects/mongo_docs/index.html">MongoDB Install and Work</a></p>
+      <p style="font-size: 15px"><a href="projects/mongoose_docs/index.html">Mongoose and Postman</a></p>
+      <p style="font-size: 15px"><a href="projects/regex_docs/index.html">RegEx</a></p>
+      <p style="font-size: 15px"><a href="projects/react_docs/index.html">React/Sandbox</a></p>
+
+    </div>
+    <div class="footer" style="font-size: 20px">TBD</div>
+
+  </div>
+
+
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
